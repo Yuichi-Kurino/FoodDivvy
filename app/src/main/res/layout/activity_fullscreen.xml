@@ -30,6 +30,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="311dp" app:srcCompat="@drawable/a1382541357316"
                     android:id="@+id/imageView4" android:layout_weight="1"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"/>
             <ImageView
                     android:layout_width="match_parent"
                     app:srcCompat="@drawable/a2"
@@ -45,11 +49,11 @@
                     android:id="@+id/imageView9" android:layout_weight="1"/>
             <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="252dp" app:srcCompat="@drawable/images" android:id="@+id/imageView10"
+                    android:layout_height="263dp" app:srcCompat="@drawable/images" android:id="@+id/imageView10"
                     android:layout_weight="1"/>
             <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="239dp" app:srcCompat="@drawable/junk_food_625x350_81432196524"
+                    android:layout_height="235dp" app:srcCompat="@drawable/junk_food_625x350_81432196524"
                     android:id="@+id/imageView11" android:layout_weight="1"/>
             <ImageView
                     android:layout_width="match_parent"
