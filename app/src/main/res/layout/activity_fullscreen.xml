@@ -3,7 +3,7 @@
              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="@color/colorPrimary"
     tools:context=".FullscreenActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
@@ -13,7 +13,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:keepScreenOn="true"
-              android:textColor="#33b5e5"
+              android:textColor="#272727"
               android:textStyle="bold"
               android:textSize="50sp"
               android:gravity="center"
@@ -21,42 +21,42 @@
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-                      android:orientation="vertical">
-            <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/a1382541357316"
-                    android:id="@+id/imageButton"
-                    android:scaleType="centerCrop" android:isScrollContainer="true"/>
-            <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/images"
-                    android:id="@+id/imageButton4"
-                    android:scaleType="fitXY" android:isScrollContainer="true" android:keepScreenOn="false"/>
-            <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" app:srcCompat="@drawable/a2"
-                    android:id="@+id/imageButton2"
-                    android:scaleType="centerCrop"/>
-            <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/a5cbf5270089291000912ea89eight"
-                    android:id="@+id/imageButton3"
-                    android:scaleType="centerCrop"/>
-            <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/pexels_photo_70497"
-                    android:id="@+id/imageButton5"/>
-        </LinearLayout>
-    </ScrollView>
     <FrameLayout android:layout_width="match_parent"
                  android:layout_height="match_parent"
                  android:fitsSystemWindows="true">
 
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/a1382541357316"
+                        android:id="@+id/imageButton"
+                        android:scaleType="centerCrop" android:isScrollContainer="true"/>
+                <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/images"
+                        android:id="@+id/imageButton4"
+                        android:scaleType="fitXY" android:isScrollContainer="true" android:keepScreenOn="false"/>
+                <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" app:srcCompat="@drawable/a2"
+                        android:id="@+id/imageButton2"
+                        android:scaleType="centerCrop"/>
+                <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/a5cbf5270089291000912ea89eight"
+                        android:id="@+id/imageButton3"
+                        android:scaleType="centerCrop"/>
+                <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/pexels_photo_70497"
+                        android:id="@+id/imageButton5"/>
+            </LinearLayout>
+        </ScrollView>
         <LinearLayout android:id="@+id/fullscreen_content_controls"
                       style="?metaButtonBarStyle"
                       android:layout_width="match_parent"
