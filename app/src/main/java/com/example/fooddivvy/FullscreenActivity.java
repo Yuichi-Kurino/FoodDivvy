@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -17,6 +18,7 @@ import android.widget.Button;
  */
 public class FullscreenActivity extends AppCompatActivity {
     private Button button;
+    private ImageButton infobutton;
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -87,6 +89,7 @@ public class FullscreenActivity extends AppCompatActivity {
         }
     };
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,9 +120,24 @@ public class FullscreenActivity extends AppCompatActivity {
                 openMainActivity();
             }
         });
+
+        findViewById(R.id.imageButton).setOnTouchListener(mDelayHideTouchListener);
+        infobutton = findViewById(R.id.imageButton);
+        infobutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openInfoActivity();
+            }
+        });
+
     }
     public void openMainActivity(){
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openInfoActivity(){
+        Intent intent = new Intent(this, infopage.class);
         startActivity(intent);
     }
 
