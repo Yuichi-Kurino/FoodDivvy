@@ -19,6 +19,10 @@ import android.widget.ImageButton;
 public class FullscreenActivity extends AppCompatActivity {
     private Button button;
     private ImageButton infobutton;
+    private ImageButton infobutton2;
+    private ImageButton infobutton3;
+    private ImageButton infobutton4;
+    private ImageButton infobutton5;
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -124,6 +128,42 @@ public class FullscreenActivity extends AppCompatActivity {
         findViewById(R.id.imageButton).setOnTouchListener(mDelayHideTouchListener);
         infobutton = findViewById(R.id.imageButton);
         infobutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openInfoActivity();
+            }
+        });
+
+        findViewById(R.id.imageButton2).setOnTouchListener(mDelayHideTouchListener);
+        infobutton2 = findViewById(R.id.imageButton2);
+        infobutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openInfoActivity();
+            }
+        });
+
+        findViewById(R.id.imageButton3).setOnTouchListener(mDelayHideTouchListener);
+        infobutton3 = findViewById(R.id.imageButton3);
+        infobutton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openInfoActivity();
+            }
+        });
+
+        findViewById(R.id.imageButton4).setOnTouchListener(mDelayHideTouchListener);
+        infobutton4 = findViewById(R.id.imageButton4);
+        infobutton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openInfoActivity();
+            }
+        });
+
+        findViewById(R.id.imageButton5).setOnTouchListener(mDelayHideTouchListener);
+        infobutton5 = findViewById(R.id.imageButton5);
+        infobutton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openInfoActivity();
