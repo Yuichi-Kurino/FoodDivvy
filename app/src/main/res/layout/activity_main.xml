@@ -9,5 +9,5 @@
 
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="705dp" app:srcCompat="@drawable/googlemaps" android:id="@+id/imageView2"/>
+            android:layout_height="678dp" app:srcCompat="@drawable/googlemaps" android:id="@+id/imageView2"/>
 </RelativeLayout>
